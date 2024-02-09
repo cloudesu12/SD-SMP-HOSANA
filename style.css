@@ -1,0 +1,191 @@
+link{
+	display: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+	size: 15px;
+}
+
+body{
+	background-color: #F3EDEC;
+}
+.navigation{
+	list-style-type: none;
+	padding-right: 10px;
+}
+.navigation .about{
+	font-family: calibri;
+	color:  #48487f;
+	font-size: 20px;
+	list-style-type: none;
+}
+.navigation .galeri{
+	color:  #48487f;
+	font-size: 20px;
+	list-style-type: none;
+}
+.navigation .event{
+	color:  #48487f;
+	font-size: 20px;
+	list-style-type: none;
+}
+.navigation .pendaftaran{
+	color:  #48487f;
+	font-size: 20px;
+	list-style-type: none;
+}
+.navigation .kontak{
+	color:  #48487f;
+	font-size: 20px;
+	list-style-type: none;
+}
+.tengah{
+	position: relative;
+	letter-spacing: 6px;
+	padding: 80px;
+	bottom: 20px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	color: #48487f;
+    font-family: "Montserrat",sans-serif;
+}
+.box-daftar{
+	position: relative;
+	top: 40px;
+	padding: 30px 30px;
+	border-radius: 5px;
+}
+.tengah .box-daftar{
+	font-size: 15px;
+	letter-spacing: 3px;
+	display: inline-block;
+	background-color: #48487f;
+	color: white;
+    font-family: "Montserrat",sans-serif;
+}
+.judul{
+	padding-left: 110px;
+	font-weight: bold;
+	letter-spacing: 11px;
+	font-size: 27px;
+	color: #48487f;
+    font-family: "Montserrat",sans-serif;
+
+}
+.menubar a{
+	text-indent: 2px;
+	text-decoration: none; /*menghilangkan italic didalam link*/
+	color: black; 
+	font-weight: bold; /*memberikan keterangan bold */
+	font-size: 15px;
+
+}
+.sendiri{
+	display: flex;
+	animation: slide 50s infinite;
+}
+.sendiri img{
+	width: 105%;
+	height: 105%;
+}
+
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	15% {
+		transform: translateX(-105%);
+	}
+	30% {
+		transform: translateX(-210%);
+	}
+	45% {
+		transform: translateX(-315%);
+	}
+	60% {
+		transform: translateX(-210%);
+	}
+	75% {
+		transform: translateX(-105%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+.menu-info{
+	font-weight: bold;
+	text-align: center;
+	font-size: 20px;
+}
+img{
+	width: 20%;
+	height: 20%;
+}
+
+@media  only screen and (min-width: 360px){
+.menubar{
+	display: block;
+	width: 100%;
+}
+.nav{
+	padding-left: 70px;
+	text-indent: 20px;
+}
+.wraper{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-right: 30px;
+}
+.menu{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-right: 60px;
+}
+.menu .submenu{
+	padding-left: 30px;
+}
+.informasi{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-right: 120px;
+}
+
+@media only screen and (min-width: 711px){
+.menubar{
+	display: flex;
+	justify-content: space-between; /*membagi kolom kanan dan kiri*/
+	text-align: center; /*posisi text*/
+	align-items: center; /*posisi pargaraf jadi tengah*/
+	height: 60px;
+    width: 100%;
+    background-color: white;
+    word-spacing: 30px; /*memberikan spasi di setiap kalimat*/
+}
+.wraper{
+	margin: 50px;
+	display: flex;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	border-radius: 50px; /*memberikan siku pada gambar*/
+	overflow: hidden;
+}
+.menu {
+	color: #252792;
+	padding-right: 60px; /*mengatur posisi text*/
+}
+.box{
+	display: flex;
+	justify-content: space-between; /*membagi kolom kanan dan kiri*/
+	text-align: center; /*posisi text*/
+	align-items: center; /*posisi pargaraf jadi tengah*/
+    background-color: white;
+    word-spacing: 30px; /*memberikan spasi di setiap kalimat*/
+    bottom: 30px;
+}
